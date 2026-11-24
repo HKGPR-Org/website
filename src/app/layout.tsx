@@ -11,7 +11,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const siteUrl = process.env.SITE_URL;
 
-const title = "ALPHA University Chapter at the University of Hong Kong";
+const title = "Hong Kong Group for Peace Research";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl!),
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: `%s - ${title}`,
   },
   description: siteConfig.description,
-  manifest: "/favicon/site.webmanifest",
+  manifest: "/favicon/hkgpr.webmanifest",
   openGraph: {
     title: title,
     description: siteConfig.description,
@@ -48,13 +48,15 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon/hkgpr-icon.svg", type: "image/svg+xml" },
+      { url: "/favicon/hkgpr-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon/hkgpr-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/hkgpr-favicon.ico", sizes: "any" },
     ],
+    shortcut: ["/favicon/hkgpr-favicon.ico"],
     apple: [
       {
-        url: "/favicon/apple-touch-icon.png",
+        url: "/favicon/hkgpr-apple-touch-icon.png",
         sizes: "180x180",
         type: "image/png",
       },
@@ -73,7 +75,7 @@ const jsonLd = {
     contactType: "general inquiries",
     email: siteConfig.email,
   },
-  sameAs: [siteConfig.instagram, siteConfig.github, siteConfig.linkedin],
+  sameAs: [siteConfig.instagram, siteConfig.linkedin],
 };
 
 export default async function RootLayout({

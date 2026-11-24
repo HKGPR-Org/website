@@ -9,7 +9,7 @@
       <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>ALPHA HKU Sitemap</title>
+        <title>HKGPR Sitemap</title>
         <style>
           body {
             font-family: sans-serif;
@@ -30,7 +30,7 @@
             margin-bottom: 0.75rem;
           }
           header img { 
-            width: 173px;
+            width: 162px;
             height: 44px;
           }
           table {
@@ -49,7 +49,7 @@
       </head>
       <body>
         <header>
-          <img src="/navigation-bar.webp" alt="ALPHA HKU"/>
+          <img src="/hkgpr-banner.svg" alt="HKGPR"/>
           <h1>Sitemap</h1>
         </header>
 

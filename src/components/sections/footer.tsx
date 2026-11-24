@@ -27,7 +27,7 @@ export function Footer() {
               </ul>
             </div>
             <div className="flex flex-col items-center space-y-4">
-              <h2 className="font-semibold">Connect with us!</h2>
+              <h2 className="font-semibold">Connect with Us</h2>
               <SocialLinks
                 variant="footer"
                 className="flex flex-col items-start gap-3"
@@ -36,15 +36,7 @@ export function Footer() {
             </div>
           </div>
           <div className="mt-8 border-t border-border/40 pt-8 text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} ALPHA University Chapter at the University of Hong Kong.
-            All rights reserved.
-            <br />
-            <SmartLink
-              href={siteConfig.parentOrg}
-              className={cn(baseTextLinkClass, "inline-flex items-center gap-2 underline")}
-            >
-              {siteConfig.parentOrg.replace("https://", "")}
-            </SmartLink>
+            © 2027 Hong Kong Group for Peace Research. All Rights Reserved.
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { SmartLink } from "@/components/primitives/smart-link";
 import { siteConfig } from "@/lib/config";
-import { SiGithub, SiInstagram } from "@icons-pack/react-simple-icons";
+import { SiInstagram } from "@icons-pack/react-simple-icons";
 import { Mail } from "lucide-react";
 import type { ComponentType } from "react";
 import { FaLinkedin } from "react-icons/fa";
@@ -28,11 +28,6 @@ const socialLinks: SocialLink[] = [
     href: siteConfig.linkedin,
     label: "LinkedIn",
     Icon: FaLinkedin,
-  },
-  {
-    href: siteConfig.github,
-    label: "GitHub",
-    Icon: SiGithub,
   },
 ];
 

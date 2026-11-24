@@ -23,6 +23,7 @@ const staticMainNav: NavItem[] = [
     ],
   },
   { href: "/upcoming-event", label: "Upcoming Event" },
+  { href: "/past-events", label: "Past Events" },
   {
     href: "/join-us",
     label: "Join Us",
@@ -40,17 +41,16 @@ const staticSitemapOnlyNav: NavItem[] = [
 ];
 
 export const siteConfig = {
-  title: "ALPHA HKU",
+  title: "HKGPR",
   description:
-    "The first and only global student initiative based in Hong Kong for constructive peace and humanity. First international student chapter of ALPHA Education.",
-  email: "alphahku1213@gmail.com",
-  instagram: "https://www.instagram.com/alpha.hku",
-  github: "https://github.com/ALPHA-HKU",
-  linkedin: "https://www.linkedin.com/company/alpha-hku/",
-  parentOrg: "https://www.alphaeducation.org",
-  seoImage: "/ALPHA-HKU.png",
-  seoImageWidth: 882, // open paint.exe and check seoImage
-  seoImageHeight: 802,
+    "The Hong Kong Group for Peace Research (HKGPR) is an independent, non-partisan Global Research Initiative advancing interdisciplinary peace research, dialogue, and policy advice.",
+  email: "hkgpr.general@gmail.com",
+  instagram: "https://www.instagram.com/hkgpr.peace",
+  github: "https://github.com/HKGPR-Org",
+  linkedin: "https://www.linkedin.com/company/hkgpr/",
+  seoImage: "/HKGPR.png",
+  seoImageWidth: 1024,
+  seoImageHeight: 1024,
   mainNav: staticMainNav,
   sitemapOnlyNav: staticSitemapOnlyNav,
   staticRoutes: flattenByChildren(staticMainNav)
@@ -81,7 +81,7 @@ export function buildPageMetadata(
     title: label,
     description,
     alternates: {
-      canonical: path === "/" ? "/" : path.replace(/\/$/, ""), // Google Search Console; prevents {www.}alphahku.page subdomain issues
+      canonical: path === "/" ? "/" : path.replace(/\/$/, ""), // Google Search Console; prevents {www.}hkgpr.page subdomain issues
     },
     openGraph: {
       title: label,

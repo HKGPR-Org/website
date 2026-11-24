@@ -61,16 +61,17 @@ export function DesktopNav({ mainNav }: { mainNav: NavItem[] }) {
     <div className="flex items-center gap-6">
       <SmartLink
         href="/"
-        className="flex items-center gap-2"
+        aria-label="Return to homepage"
+        className="relative z-10 inline-flex shrink-0 cursor-pointer items-center"
       >
         <Image
-          src="/navigation-bar.webp"
-          alt="Logo"
-          width={173}
+          src="/hkgpr-banner.svg"
+          alt="HKGPR Logo"
+          width={162}
           height={44}
           priority
           fetchPriority="high"
-          className="aspect-auto h-11 w-auto dark:invert"
+          className="pointer-events-none block h-11 w-[162px] max-w-none shrink-0 select-none"
         />
       </SmartLink>
       <nav className="hidden lg:flex">
