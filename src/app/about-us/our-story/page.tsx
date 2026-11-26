@@ -4,7 +4,7 @@ import { buildPageMetadata } from "@/lib/config";
 import { Metadata } from "next";
 
 const description =
-  "The first and only global student initiative based in Hong Kong for constructive peace and humanity. First international student chapter of ALPHA Education.";
+  "The international order is failing when needed most. HKGPR confronts institutional shortcomings and advises policymakers on resolving persistent deadlocks.";
 export const metadata: Metadata = buildPageMetadata("/about-us/our-story", { description });
 
 export default function OurStory() {
@@ -15,35 +15,29 @@ export default function OurStory() {
           imageSrc: "/about-us/our-story/white-doves.jpg",
           content: (
             <PageHeader
-              title="Our Story"
+              title="Why Our Work Matters"
               descriptionClassName="text-left text-white pl-4 pr-4"
               description={
                 <>
-                  Inspired by an internship in ALPHA Education in the summer of 2025, the Founding
-                  Committee of ALPHA-HKU were deeply inspired by the groundbreaking progress HK
-                  immigrants over 3 generations have achieved on the opposite side of the globe,
-                  regarding the promotion of Asian's overlooked histories.
+                  The international order is failing when needed most. Repeated United Nations
+                  deadlocks, treaty enforcement deficits, and political polarisation undermine
+                  conflict prevention and leave state accountability unfulfilled. HKGPR confronts
+                  these institutional shortcomings and advises policymakers on{" "}
+                  <em>resolving persistent deadlocks</em>.
                   <br />
                   <br />
-                  We have seen not only the importance of breaking the silence in achieving global
-                  transitional justice for victims of war atrocities, but also, most importantly,
-                  the possibility for our shared vision to come true - as far as ALPHA Education has
-                  proceeded.
-                  <br />
-                  <br />
-                  Immediately, the Founding Committee gathered and initiated the establishment of
-                  ALPHA University Chapter at the University of Hong Kong, the first ever
-                  international university chapter of ALPHA Education. From carrying ALPHA
-                  Education's mandate, we are an independent student organization, the largest
-                  student initiative in HKU, formed by an installation size of 30 students to spread
-                  the message of peace and humanity.
+                  <em>Anchoring HKGPR in Hong Kong</em> offers a distinct geographical advantage. As
+                  an open, globally connected hub with minimal local political tension, Hong Kong
+                  provides a stable, neutral convening ground linking Asia, Europe, and the wider
+                  world—enabling candid, cross-regional dialogue that is increasingly difficult to
+                  sustain in more polarised jurisdictions.
                 </>
               }
             />
           ),
         },
         {
-          imageSrc: "/about-us/our-story/student-gathering.jpg",
+          imageSrc: "/about-us/our-story/IMG_5301.webp",
           content: (
             <PageHeader
               as="h2"
@@ -51,14 +45,9 @@ export default function OurStory() {
               descriptionClassName="text-left text-white pl-4 pr-4"
               description={
                 <>
-                  We vow to strive tirelessly and continuously for excellence, to promote the
-                  unsound history of WW2 in Asia and other war atrocities around the world. From
-                  studying and promoting these overlooked suffering the people have endured, we aim
-                  to obtain the theory for peace advocacy, particularly for youngsters, to break
-                  through silence and make their voices heard amongst global decision-makers.
-                  <br />
-                  <br />
-                  We represent the next generation's voices for peace!
+                  Examine the root causes of instability—international governance, contemporary
+                  tensions, historical roots, and conflict prevention—and attain{" "}
+                  <u>UN ECOSOC Special Consultative Status</u> within 10–15 years.
                 </>
               }
             />

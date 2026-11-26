@@ -18,8 +18,8 @@ const staticMainNav: NavItem[] = [
     children: [
       { href: "/about-us/our-story", label: "Our Story" },
       { href: "/about-us/annual-report", label: "Annual Report" },
-      { href: "/about-us/exco", label: "Executive Committee" },
-      { href: "/about-us/partners", label: "Partners" },
+      { href: "/about-us/exco", label: "Board of Directors" },
+      { href: "/about-us/partners", label: "Supporting Organizations" },
     ],
   },
   { href: "/upcoming-event", label: "Upcoming Event" },

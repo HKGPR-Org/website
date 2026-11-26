@@ -1,6 +1,5 @@
 "use client";
 
-import { ModeToggle } from "@/components/primitives/mode-toggle";
 import { SocialLinks } from "@/components/primitives/social-links";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -48,7 +47,6 @@ export function HeaderClient({
                 variant="header"
                 className="hidden items-center gap-4 lg:flex"
               />
-              <ModeToggle />
               <CollapsibleTrigger asChild>
                 <Button
                   variant="ghost"

@@ -15,47 +15,18 @@ export type ExcoMember = {
 
 export const excoMembers: ExcoMember[] = [
   {
-    name: "Lam Tze Hei",
-    position: "President",
+    name: "Lam Tsz Hei",
+    position: "Executive Director",
+    links: [{ type: "linkedin", url: "https://www.linkedin.com/in/lam-tsz-hei-jacky" }],
+    bio: "Aspiring Postgraduate Law Student",
   },
   {
-    name: "Bibi Hajirah",
-    position: "Vice-President",
-  },
-  {
-    name: "Liu Chung Wing",
-    position: "Vice-President",
-  },
-  {
-    name: "Fatima-Tul-Zahra",
-    position: "General Secretary",
-    links: [
-      { type: "linkedin", url: "https://linkedin.com/in/fatima-tul-zahra-977404322" },
-      { type: "instagram", url: "https://www.instagram.com/_https.fatima_/" },
-      { type: "github", url: "https://github.com/https-fatima" },
-      { type: "email", url: "fatimatulzahra1330@gmail.com" },
-    ],
-    bio: "Year 3 Decision Analytics Student at HKU-trying to find my path into the CyberWorld",
-  },
-  {
-    name: "Pak Wing Ching",
-    position: "Director of Treasury",
-  },
-  {
-    name: "SeoJin Moon",
-    position: "Directory of Publicity",
-  },
-  {
-    name: "Razzaq Kinza",
-    position: "Directory of Publicity",
-    links: [
-      { type: "linkedin", url: "https://www.linkedin.com/in/kinza-razzaq-a2a7462a8" },
-      { type: "instagram", url: "https://www.instagram.com/iamkinza2/" },
-    ],
+    name: "Liu Chung Wing, Erwin",
+    position: "Co-Executive Director",
   },
   {
     name: "Cheng Ho Ming",
-    position: "Chief Technician",
+    position: "Chief Technical Officer",
     links: [
       { type: "email", url: "eric310@connect.hku.hk" },
       { type: "github", url: "https://github.com/eric15342335" },

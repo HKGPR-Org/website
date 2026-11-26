@@ -5,23 +5,24 @@ import { resources } from "@/lib/data/resources";
 import { Metadata } from "next";
 
 const description =
-  "Following are the collections of websites donated by experts and students who have published their research through online media, which share unique yet often overlooked perspectives of WW2 in Asia.";
+  "Below is a curated collection of digital research projects examining historical conflicts, post-atrocity memory, and overlooked perspectives—including World War II in Asia.";
 export const metadata: Metadata = buildPageMetadata("/resources", { description });
 
 export default function Resources() {
   return (
     <section>
       <PageHeader
-        title="Resource"
+        title="Resources"
         descriptionClassName="text-left"
         description={
           <>
             {description}
             <br />
             <br />
-            ALPHA-HKU hereby extends our heartfelt gratitude for the author's generosity and we
-            invite all of you to browse through the websites for new insights of the human stories
-            during WW2 in Asia.
+            The Hong Kong Group for Peace Research (<strong>HKGPR</strong>) extends its sincere
+            gratitude to the authors for their generosity in sharing their work, and invites readers
+            to explore these projects for deeper insight into the human dimensions of war, memory,
+            and peace.
           </>
         }
         className="mb-8"

@@ -5,8 +5,9 @@ import { buildPageMetadata, siteConfig } from "@/lib/config";
 import { getJobs } from "@/lib/jobs.server";
 import { Metadata } from "next";
 
+const heading = "Join the Team at the Hong Kong Group for Peace Research";
 const description =
-  "Join The Team at ALPHA University Chapter at the University of Hong Kong, an initiative with great potential.";
+  "Join the team at the Hong Kong Group for Peace Research (HKGPR) to advance interdisciplinary peace research, dialogue, and policy advice.";
 export const metadata: Metadata = buildPageMetadata("/join-us", { description });
 
 export default async function JoinUs() {
@@ -14,7 +15,7 @@ export default async function JoinUs() {
   return (
     <section className="flex h-[calc(100vh-var(--header-height))] flex-col">
       <PageHeader
-        title={description}
+        title={heading}
         description="We provide opportunities for:"
         titleClassName="max-w-4xl mx-auto text-2xl md:text-4xl"
         descriptionClassName="text-base md:text-lg"

@@ -6,18 +6,18 @@ import { Metadata } from "next";
 
 // import Image from "next/image";
 
-const description = "Meet the team leading ALPHA HKU.";
+const description = "Meet the team leading HKGPR.";
 export const metadata: Metadata = buildPageMetadata("/about-us/exco", { description });
 
 export default function ExecutiveCommittee() {
   return (
     <section className="container mx-auto px-4">
       <PageHeader
-        title="Executive Committee"
+        title="Board of Directors"
         description={`${description} Hover a card to learn more.`}
         className="mb-8"
       />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {excoMembers.map((member) => (
           <ExcoCard
             key={`${member.name}-${member.position}`}

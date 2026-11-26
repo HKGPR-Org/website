@@ -12,6 +12,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const siteUrl = process.env.SITE_URL;
 
 const title = "Hong Kong Group for Peace Research";
+const iconVersion = "?v=20261126";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl!),
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     template: `%s - ${title}`,
   },
   description: siteConfig.description,
-  manifest: "/favicon/hkgpr.webmanifest",
+  manifest: `/favicon/hkgpr.webmanifest${iconVersion}`,
   openGraph: {
     title: title,
     description: siteConfig.description,
@@ -48,15 +49,16 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon/hkgpr-icon.svg", type: "image/svg+xml" },
-      { url: "/favicon/hkgpr-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon/hkgpr-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon/hkgpr-favicon.ico", sizes: "any" },
+      { url: `/favicon/hkgpr-32x32.png${iconVersion}`, sizes: "32x32", type: "image/png" },
+      { url: `/favicon/hkgpr-16x16.png${iconVersion}`, sizes: "16x16", type: "image/png" },
+      { url: `/favicon/hkgpr-192x192.png${iconVersion}`, sizes: "192x192", type: "image/png" },
+      { url: `/favicon/hkgpr-icon.svg${iconVersion}`, sizes: "any", type: "image/svg+xml" },
+      { url: `/favicon/hkgpr-favicon.ico${iconVersion}`, sizes: "48x48", type: "image/x-icon" },
     ],
-    shortcut: ["/favicon/hkgpr-favicon.ico"],
+    shortcut: [`/favicon/hkgpr-favicon.ico${iconVersion}`],
     apple: [
       {
-        url: "/favicon/hkgpr-apple-touch-icon.png",
+        url: `/favicon/hkgpr-apple-touch-icon.png${iconVersion}`,
         sizes: "180x180",
         type: "image/png",
       },
@@ -100,6 +102,7 @@ export default async function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
+          storageKey="hkgpr-system-theme"
         >
           <Header mainNav={mainNav} />
           <main className="min-h-[calc(100vh-var(--header-height))] flex-1">{children}</main>

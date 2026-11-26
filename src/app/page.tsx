@@ -20,15 +20,12 @@ export default function Home() {
             content: <i>Next generation voices for peace.</i>,
           },
           {
-            imageSrc: "/home/Main Building 4.webp",
+            imageSrc: "/home/IMG_5228.webp",
             content: (
-              <>
-                The first and only global student initiative
-                <br />
-                based in Hong Kong
-                <br />
-                for constructive peace and humanity.
-              </>
+              <span className="block max-w-4xl px-8 leading-snug md:px-16">
+                To <em>influence core policymaking institutions</em> and strengthen multilateral
+                world order.
+              </span>
             ),
           },
         ]}
@@ -50,8 +47,8 @@ export default function Home() {
           size="sm"
           childrenClassName="mt-4"
         >
-          <div className="mx-auto max-w-3xl text-base text-muted-foreground">
-            <p>
+          <div className="mx-auto max-w-5xl px-4 text-base text-muted-foreground">
+            <p className="lg:whitespace-nowrap">
               The Hong Kong Group for Peace Research (<strong>HKGPR</strong>) is an independent,
               non-partisan Global Research Initiative dedicated to:
             </p>

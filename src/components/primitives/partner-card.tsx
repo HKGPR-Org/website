@@ -1,5 +1,5 @@
 import { SmartLink } from "@/components/primitives/smart-link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import type { Partner } from "@/lib/data/partners";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -12,9 +12,9 @@ type PartnerCardProps = {
 export function PartnerCard({ partner, className }: PartnerCardProps) {
   return (
     <Card className={cn("h-full", className)}>
-      <CardHeader className="text-center">
+      <CardHeader className="flex flex-col items-center justify-center gap-2 px-6 text-center">
         {partner.logo && (
-          <div className="relative mx-auto h-16 w-16">
+          <div className={cn("relative mx-auto h-16 w-16", partner.logoClassName)}>
             <Image
               src={partner.logo}
               alt={`${partner.name} logo`}
@@ -27,13 +27,12 @@ export function PartnerCard({ partner, className }: PartnerCardProps) {
         <CardDescription>
           <SmartLink
             href={partner.href}
-            className="hover:underline"
+            className="break-all hover:underline"
           >
             {partner.href}
           </SmartLink>
         </CardDescription>
       </CardHeader>
-      <CardContent className="max-w-[27ch] text-left">{partner.description}</CardContent>
     </Card>
   );
 }
